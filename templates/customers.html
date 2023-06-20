@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .table{
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+</head>
+
+<body>
+    <table>
+        <div class="table">
+            <tr>
+                <th>ID</th>
+                <th>FIRSTNAME</th>
+                <th>LASTNAME</th>
+                <th>EMAIL</th>
+                <th>PHONE</th>
+            </tr>
+            {% for customer in customer%}
+            <tr>
+                <td>{{customer[0]}}</td>
+                <td>{{customer[1]}}</td>
+                <td>{{customer[2]}}</td>
+                <td>{{customer[3]}}</td>
+                <td>{{customer[4]}}</td>
+            </tr>
+            {% endfor %}
+        </div>
+    </table>
+</body>
+
+</html>
