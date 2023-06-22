@@ -19,28 +19,34 @@
 </head>
 
 <body>
-    <table class="table" id="myTable">
-        <thead>
-            <tr>
-                <th scope="col">id</th>
-                <th scope="col">firstname</th>
-                <th scope="col">lastname</th>
-                <th scope="col">email</th>
-                <th scope="col">phone</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for c in customer %}
-            <tr>
-                <th scope="row">{{ c[0] }}</th>
-                <td>{{ c[1] }}</td>
-                <td>{{ c[2] }}</td>
-                <td>{{ c[3] }}</td>
-                <td>{{ c[4] }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+    <div class="row">
+        <div class="col-3"></div>
+        <div col="col-6">
+            <table class="table" id="myTable">
+                <thead>
+                    <tr>
+                        <th scope="col">id</th>
+                        <th scope="col">firstname</th>
+                        <th scope="col">lastname</th>
+                        <th scope="col">email</th>
+                        <th scope="col">phone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for c in customer %}
+                    <tr>
+                        <th scope="row">{{ c[0] }}</th>
+                        <td>{{ c[1] }}</td>
+                        <td>{{ c[2] }}</td>
+                        <td>{{ c[3] }}</td>
+                        <td>{{ c[4] }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="col-3"></div>
+    </div>
     </div>
     </div>
     </div>
